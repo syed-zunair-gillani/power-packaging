@@ -2,8 +2,8 @@ export default function (req, res) {
      // require('dotenv').config()
      let nodemailer = require('nodemailer')
 
-     const EMAIL="softsgens@gmail.com"
-     const GMAIL_PASSWORD="bczjxzfatgxsebrz"
+     const EMAIL="gillanix007@gmail.com"
+     const GMAIL_PASSWORD="ixojsrkwtztllcym"
 
      // step-1 
      const transporter = nodemailer.createTransport({
@@ -19,7 +19,7 @@ export default function (req, res) {
      // step-2
      const mailData = {
           from: EMAIL,
-          to: `mufaqar@gmail.com, ${req.body.email}`,
+          to: `zunairgillani54@gmail.com, jdottech85@gmail.com, ${req.body.email}`,
           subject: `Message From ${req.body.name}`,
           text: req.body.detail + " | Sent from: " + req.body.email,
           html: `
